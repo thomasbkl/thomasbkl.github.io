@@ -1,8 +1,8 @@
 // Service worker d'Envol : garde l'application en cache pour l'ouvrir hors ligne.
 // La version et la liste des fichiers sont remplies par build.mjs ; une nouvelle version déclenche la mise à jour.
-const VERSION = 'aa0e2983a8';
+const VERSION = '9e1fb9a500';
 const CACHE = 'envol-' + VERSION;
-const ASSETS = ["./","app.js?v=aa0e2983a8","app.css?v=aa0e2983a8","config.js?v=aa0e2983a8","manifest.webmanifest","favicon.svg","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","fonts/bricolage-grotesque-latin-opsz-normal.woff2","fonts/geist-latin-wght-normal.woff2","fonts/geist-mono-latin-wght-normal.woff2"];
+const ASSETS = ["./","app.js?v=9e1fb9a500","app.css?v=9e1fb9a500","config.js?v=9e1fb9a500","manifest.webmanifest","favicon.svg","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","fonts/bricolage-grotesque-latin-opsz-normal.woff2","fonts/geist-latin-wght-normal.woff2","fonts/geist-mono-latin-wght-normal.woff2"];
 const SCOPE = new URL('./', self.location).pathname;
 
 self.addEventListener('install', (e) => {
