@@ -3004,3 +3004,45 @@ table.ledger tr.lg-total td {
     bottom: calc(84px + env(safe-area-inset-bottom, 0px));
   }
 }
+
+/* ——— Monte Carlo : pourquoi les trajectoires échouent ——— */
+.diag-item {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--hair);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.diag-ic {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: var(--surface-3);
+  color: var(--ink-2);
+}
+.diag-item.crit .diag-ic {
+  background: var(--crit-soft, color-mix(in srgb, var(--crit) 14%, var(--surface)));
+  color: var(--crit-ink);
+}
+.diag-t {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+@media (max-width: 700px) {
+  .diag-item {
+    grid-template-columns: 32px minmax(0, 1fr);
+    align-items: start;
+  }
+  .diag-item .btn {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
