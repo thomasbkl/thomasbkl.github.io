@@ -1,5 +1,3 @@
 // Réglages de la version web. Aucune donnée personnelle ici : ce fichier est public.
-window.ENVOL_CONFIG = {
-  // Dépôt GitHub privé qui garde les plans (proposé par défaut dans « Profil et données »)
-  dataRepo: 'thomasbkl/envol-donnees',
-};
+// Le dépôt de données n'y figure pas : l'app le déduit du jeton collé sur chaque appareil.
+window.ENVOL_CONFIG = {};
