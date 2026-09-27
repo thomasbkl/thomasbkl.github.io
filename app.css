@@ -910,6 +910,13 @@ select.input {
 .inline-fields > * {
   flex: 1 1 120px;
 }
+/* Mois et année (ou ans et mois) côte à côte, même dans une demi-colonne */
+.inline-fields.date-fields > select {
+  flex: 1 1 100px;
+}
+.inline-fields.date-fields > .input-wrap {
+  flex: 0 1 92px;
+}
 .input.auto,
 select.input.auto {
   width: auto;
